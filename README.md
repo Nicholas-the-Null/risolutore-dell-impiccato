@@ -1,9 +1,7 @@
 # hangman-game-solver
 Use this script to win hangman game 
 
-
-
-## How work:
+## How work
 
 1)read all word in a database
 
