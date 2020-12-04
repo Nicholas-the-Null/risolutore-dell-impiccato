@@ -77,12 +77,12 @@ def Impiccato():
                         
                         
                         if inserisci[0]==-1:
-                            scelta=input("voi eliminare per lettera=1 o per più lettere=2 ")
+                            scelta=input("one letter=1 o more lettere=2 ")
                             
                             if scelta=="2":
                                 while True:
                                     try:
-                                        numero=int(input("dammi il numero di posizione/lettere si parte dal finale (ovvero se si digita 3) si verrano considerate le 3 ultime lettere "))
+                                        numero=int(input("give me start position for exemple if you give me 3 and secret we will delete all word who havent last 3 letter match "))
                                         if numero>0:
                                             numero*=-1
                                             break
@@ -96,7 +96,7 @@ def Impiccato():
                                         messagebox.showerror("errore","you insert a string ")
                                         root.destroy()
                                 while True:
-                                    stringa=input("dammi le lettere da eliminare ")
+                                    stringa=input("give me letter ")
                                     if len(stringa)==numero*-1:
                                         break
                                 for x in lenna:
@@ -169,10 +169,8 @@ def Impiccato():
 
 
 
-        sicuro=input("vuoi eliminare anche tutte le parole che hanno la lettera inserita anche in parte diversi ad esempio se la parola segreta è ciao "+
-                     " e come posizione della i hai scelto solo 2 questa funzione eliminera parole come civi che anche avendo la i alla posizione 2 ne ha una alla fine "+
-                     " digitare si per cancellare ")
-        if sicuro=="si":
+        sicuro=input("do you want delet word, if they have the give letter in different position ")
+        if sicuro=="yes":
             const=mistery.count(inserisci_lettera)
             elimina=[]
             for x in lenna:
