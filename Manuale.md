@@ -2,7 +2,6 @@ Come funzionano i comandi speciali
 
 tutti i comandi potranno essere inseriti al posto di secegliere la posizione della lettera si hanno a disposizione diveri comandi
 
-
 comando 0:
 
 stampa la lista di tutte le possibili parole rimaste
