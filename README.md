@@ -4,16 +4,16 @@
 
 Use this script to win hangman game 
 
-## How work
+## algoritmo
 
-1)read all word in a database
+1)legge le parole nel dtabase fornito in input
 
-2)do a list, with word with same length
+2)dopo aver chiesto la lunghezza crea un array con tutte le parole aventi la stessa lunghezza
 
-3)insert letter position
+3)crea un ciclo finchèl'array avra una lunghezza superiore a 1
 
-4)check if the words have letter
+4)chiedi in input la posizione/i e la lettera ed elimina le parole che non rispettano questi parametri
 
-5)delete who havent
+5)ripete finchè non trova la parola
 
-6)found word
+Grazie a https://github.com/napolux/paroleitaliane per il database delle parole
