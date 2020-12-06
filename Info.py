@@ -6,7 +6,6 @@ def Percent(lista,posizione):
             if i == posizione:
                 lettere.append(s)
                 break
-    
     totale=len(lettere)
     while len(lettere)!=0:
         lettera=lettere[0]
