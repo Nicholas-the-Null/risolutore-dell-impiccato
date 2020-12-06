@@ -12,11 +12,7 @@ def Percent(lista,posizione):
         tot_lettera=lettere.count(lettera)
         lettere=list(filter(lambda a: a != lettera, lettere))
         out+="la lettera " + lettera + " è presemte per il ben " +str(tot_lettera) + " su " + str(totale)+"\n"
-
     return out
-        
-
-
 
 
 
