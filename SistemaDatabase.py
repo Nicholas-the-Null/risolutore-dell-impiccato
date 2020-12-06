@@ -1,6 +1,6 @@
 import os
-def duplicati(list):
-    """elimina duplicati in un database"""
+def duplicati(file):
+    """Elimina duplicati in un database!"""
     if os.path.exists(file) is False:
         return "file non trovato"
     else:
@@ -50,7 +50,7 @@ def Elimina_Iniziale(iniziale,file):
         parole=x.readlines()
         x.close()
         for x in parole:
-            if iniaziale!=x[0]:
+            if iniziale!=x[0]:
                 nuove_parole.append(x)
         return nuove_parole
 
@@ -80,7 +80,6 @@ def Cat(file1,file2):
 
 
 def Uncat(file1,file2):
-    nuove_parole=[]
     if os.path.exists(file1) is False or os.path.exists(file2) is False:
         return "file non trovato"
     else:
@@ -94,9 +93,7 @@ def Uncat(file1,file2):
         database_2=list(dict.fromkeys(database_2))
         for x in database_2:
             if x in database_1:
-                database_1.remove(x)
-                
-                
+                database_1.remove(x)      
         return database_1
 
 
@@ -105,7 +102,7 @@ def LowerAll(file):
     if os.path.exists(file) is False:
         return "file non trovato"
     else:
-        x=open(file1,"r")
+        x=open(file,"r")
         database=x.readlines()
         x.close()
         for x in database:
