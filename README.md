@@ -6,13 +6,13 @@ Use this script to win hangman game
 
 ## algoritmo
 
-1)legge le parole nel dtabase fornito in input
+1)legge le parole nel database fornito in input
 
 2)dopo aver chiesto la lunghezza crea un array con tutte le parole aventi la stessa lunghezza
 
-3)crea un ciclo finchèl'array avra una lunghezza superiore a 1
+3)crea un ciclo finchè l'array avra una lunghezza superiore a 1
 
-4)chiedi in input la posizione/i e la lettera ed elimina le parole che non rispettano questi parametri
+4)chiedi in input la posizione/i e la lettera ed elimina le parole che non rispettano questi parametri o apre il sottomenu
 
 5)ripete finchè non trova la parola
 
